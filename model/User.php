@@ -9,7 +9,7 @@ class User
     /** @ODM\Id */
     private $id;
 
-    /** @ODM\Field(type="string") */
+    /** @ODM\String */
     private $name;
 
 
@@ -38,4 +38,10 @@ class User
         $this->posts->add($blogPost);
         return $this;
     }
+    
+    public function getId()
+    {
+        return $this->id;
+    }
+
 }

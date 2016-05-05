@@ -9,7 +9,7 @@ class BlogPost
     /** @ODM\Id */
     private $id;
 
-    /** @ODM\Field(type="string") */
+    /** @ODM\String */
     private $title;
 
     /**
@@ -21,4 +21,8 @@ class BlogPost
         $this->title = $title;
     }
 
+    public function getId()
+    {
+        return $this->id;
+    }
 }
