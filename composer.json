@@ -1,6 +1,7 @@
 {
     "name": "stefan/insight-doctrine",
-    "licence" : "MIT",
+    "description" : "false positives in sensiolabs insight"
+    "license" : "MIT",
     "require": {
         "doctrine/mongodb-odm": "^1.0"
     }
