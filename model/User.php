@@ -3,7 +3,11 @@
 use Doctrine\ODM\MongoDB\Mapping\Annotations as ODM;
 use Doctrine\Common\Collections\ArrayCollection;
 
-/** @ODM\Document */
+/**
+ * This is a test
+ * 
+ * @ODM\Document
+ */
 class User
 {
     /** @ODM\Id */
@@ -43,5 +47,22 @@ class User
     {
         return $this->id;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getPosts()
+    {
+        return $this->posts;
+    }
+    
 
 }

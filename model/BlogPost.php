@@ -25,4 +25,13 @@ class BlogPost
     {
         return $this->id;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+    
 }
